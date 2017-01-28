@@ -1,0 +1,20 @@
+defmodule HelloNTimes do           
+   @moduledoc """
+    Utilizando recursão, crie uma função que recebe um número e printa no
+    console "hello world" n vezes.
+    Exemplo:
+      entrada: 3
+      saída:
+        hello world
+        hello world
+        hello world
+   """
+
+   def helloNTimes(n) when n > 1 do 
+     IO.puts("hello world")         
+     helloNTimes(n-1)               
+   end
+   def helloNTimes(n) do            
+     IO.puts("hello world")
+   end
+ end

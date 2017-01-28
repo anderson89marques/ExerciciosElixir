@@ -1,0 +1,23 @@
+
+
+
+defmodule ElementoPorLinha do               
+  @moduledoc """
+    Dado uma lista de inteiros, escreva no console um elemento por linha usando
+    recursão e guard
+    Exemplo:
+      entrada -> [1,2,3,4,5]
+      Saída -> 1
+               2
+               3
+               4
+               5
+  """
+
+  def elmProLinha(lista) when lista != [] do
+    IO.puts(hd(lista))                      
+    elmProLinha(tl(lista))                  
+  end
+   
+  def elmProLinha([]), do: :ok
+end

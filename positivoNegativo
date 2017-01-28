@@ -1,0 +1,16 @@
+defmodule PositivoNegativo do               
+   @moduledoc """
+   Crie uma função que dado um número retorne:
+    -> "positivo" caso positivo
+    -> "negativo" caso negativo
+    -> "zero" caso 0
+   """
+
+   def posnega(value) do  
+     cond do
+       value > 0 -> IO.puts("positivo")
+       value < 0 -> IO.puts("negativo")
+       value == 0 -> IO.puts("zero")
+     end
+   end
+end
